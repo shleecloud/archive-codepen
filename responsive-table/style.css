@@ -1,3 +1,78 @@
-h1 {
-  color: blue;
+#wrapper {
+  /* width: 100%; */
+  width: min(800px, 100% - 3rem);
+  height: 100%;
+  margin: 0 auto;
+}
+
+#table-container {
+  margin: 0 auto;
+  height: 100%;
+  background-color: lightgray;
+
+  /* first responsive solution */
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+caption {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1rem;
+  text-transform: uppercase;
+  background-color: skyblue;
+  color: white;
+}
+
+th {
+  padding: 0.6rem;
+  font-size: 1.2rem;
+  background-color: blue;
+  color: white;
+}
+
+tr {
+  &:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+}
+
+td {
+  padding: 0.6rem;
+}
+
+/* second responsive solution */
+@media (max-width: 375px) {
+  th {
+    display: none;
+  }
+
+  td {
+    display: block;
+    padding: 0.6rem, 1rem;
+
+    display: grid;
+    grid-template-columns: 7rem auto;
+  }
+
+  td:first-child {
+    margin-top: 1rem;
+  }
+
+  td:last-child {
+    margin-bottom: 1rem;
+  }
+
+  td::before {
+    content: attr(data-label) ": ";
+    float: left;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
 }

@@ -1,7 +1,343 @@
 <link rel="stylesheet" href="./style.css" />
-<section>
-  <h1>Responsive Table</h1>
-  <table>
-    <caption>Table Caption</caption>
-  </table>
+<link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- reference: https://youtu.be/czZ1PvNW5hk?si=mkCdUR4US1bxyTkL -->
+
+<section id="wrapper">
+  <section id="table-container">
+    <div>
+      <table>
+        <caption>Responsive Table</caption>
+        <tr>
+          <th>id</th>
+          <th>first name</th>
+          <th>last name</th>
+          <th>email</th>
+          <th>country</th>
+          <th>point</th>
+        </tr>
+        <tr>
+          <td data-label="id">10</td>
+          <td data-label="first name">Duane</td>
+          <td data-label="last name">McGuire</td>
+          <td data-label="email">ragim@otvebti.uk</td>
+          <td data-label="country">Colombia</td>
+          <td data-label="point">27</td>
+        </tr>
+        <tr>
+          <td data-label="id">55</td>
+          <td data-label="first name">Shane</td>
+          <td data-label="last name">Vasquez</td>
+          <td data-label="email">la@ajlacre.bb</td>
+          <td data-label="country">Argentina</td>
+          <td data-label="point">66</td>
+        </tr>
+        <tr>
+          <td data-label="id">95</td>
+          <td data-label="first name">Jane</td>
+          <td data-label="last name">Johnston</td>
+          <td data-label="email">gi@zitvoksa.tc</td>
+          <td data-label="country">Papua New Guinea</td>
+          <td data-label="point">5</td>
+        </tr>
+        <tr>
+          <td data-label="id">9</td>
+          <td data-label="first name">Franklin</td>
+          <td data-label="last name">Glover</td>
+          <td data-label="email">jamvu@rovav.gs</td>
+          <td data-label="country">Montenegro</td>
+          <td data-label="point">66</td>
+        </tr>
+        <tr>
+          <td data-label="id">52</td>
+          <td data-label="first name">Lizzie</td>
+          <td data-label="last name">Morton</td>
+          <td data-label="email">we@wo.cx</td>
+          <td data-label="country">Ascension Island</td>
+          <td data-label="point">58</td>
+        </tr>
+        <tr>
+          <td data-label="id">10</td>
+          <td data-label="first name">Duane</td>
+          <td data-label="last name">McGuire</td>
+          <td data-label="email">ragim@otvebti.uk</td>
+          <td data-label="country">Colombia</td>
+          <td data-label="point">27</td>
+        </tr>
+        <tr>
+          <td data-label="id">55</td>
+          <td data-label="first name">Shane</td>
+          <td data-label="last name">Vasquez</td>
+          <td data-label="email">la@ajlacre.bb</td>
+          <td data-label="country">Argentina</td>
+          <td data-label="point">66</td>
+        </tr>
+        <tr>
+          <td data-label="id">95</td>
+          <td data-label="first name">Jane</td>
+          <td data-label="last name">Johnston</td>
+          <td data-label="email">gi@zitvoksa.tc</td>
+          <td data-label="country">Papua New Guinea</td>
+          <td data-label="point">5</td>
+        </tr>
+        <tr>
+          <td data-label="id">9</td>
+          <td data-label="first name">Franklin</td>
+          <td data-label="last name">Glover</td>
+          <td data-label="email">jamvu@rovav.gs</td>
+          <td data-label="country">Montenegro</td>
+          <td data-label="point">66</td>
+        </tr>
+        <tr>
+          <td data-label="id">52</td>
+          <td data-label="first name">Lizzie</td>
+          <td data-label="last name">Morton</td>
+          <td data-label="email">we@wo.cx</td>
+          <td data-label="country">Ascension Island</td>
+          <td data-label="point">58</td>
+        </tr>
+        <tr>
+          <td data-label="id">10</td>
+          <td data-label="first name">Duane</td>
+          <td data-label="last name">McGuire</td>
+          <td data-label="email">ragim@otvebti.uk</td>
+          <td data-label="country">Colombia</td>
+          <td data-label="point">27</td>
+        </tr>
+        <tr>
+          <td data-label="id">55</td>
+          <td data-label="first name">Shane</td>
+          <td data-label="last name">Vasquez</td>
+          <td data-label="email">la@ajlacre.bb</td>
+          <td data-label="country">Argentina</td>
+          <td data-label="point">66</td>
+        </tr>
+        <tr>
+          <td data-label="id">95</td>
+          <td data-label="first name">Jane</td>
+          <td data-label="last name">Johnston</td>
+          <td data-label="email">gi@zitvoksa.tc</td>
+          <td data-label="country">Papua New Guinea</td>
+          <td data-label="point">5</td>
+        </tr>
+        <tr>
+          <td data-label="id">9</td>
+          <td data-label="first name">Franklin</td>
+          <td data-label="last name">Glover</td>
+          <td data-label="email">jamvu@rovav.gs</td>
+          <td data-label="country">Montenegro</td>
+          <td data-label="point">66</td>
+        </tr>
+        <tr>
+          <td data-label="id">52</td>
+          <td data-label="first name">Lizzie</td>
+          <td data-label="last name">Morton</td>
+          <td data-label="email">we@wo.cx</td>
+          <td data-label="country">Ascension Island</td>
+          <td data-label="point">58</td>
+        </tr>
+        <tr>
+          <td data-label="id">10</td>
+          <td data-label="first name">Duane</td>
+          <td data-label="last name">McGuire</td>
+          <td data-label="email">ragim@otvebti.uk</td>
+          <td data-label="country">Colombia</td>
+          <td data-label="point">27</td>
+        </tr>
+        <tr>
+          <td data-label="id">55</td>
+          <td data-label="first name">Shane</td>
+          <td data-label="last name">Vasquez</td>
+          <td data-label="email">la@ajlacre.bb</td>
+          <td data-label="country">Argentina</td>
+          <td data-label="point">66</td>
+        </tr>
+        <tr>
+          <td data-label="id">95</td>
+          <td data-label="first name">Jane</td>
+          <td data-label="last name">Johnston</td>
+          <td data-label="email">gi@zitvoksa.tc</td>
+          <td data-label="country">Papua New Guinea</td>
+          <td data-label="point">5</td>
+        </tr>
+        <tr>
+          <td data-label="id">9</td>
+          <td data-label="first name">Franklin</td>
+          <td data-label="last name">Glover</td>
+          <td data-label="email">jamvu@rovav.gs</td>
+          <td data-label="country">Montenegro</td>
+          <td data-label="point">66</td>
+        </tr>
+        <tr>
+          <td data-label="id">52</td>
+          <td data-label="first name">Lizzie</td>
+          <td data-label="last name">Morton</td>
+          <td data-label="email">we@wo.cx</td>
+          <td data-label="country">Ascension Island</td>
+          <td data-label="point">58</td>
+        </tr>
+        <tr>
+          <td data-label="id">10</td>
+          <td data-label="first name">Duane</td>
+          <td data-label="last name">McGuire</td>
+          <td data-label="email">ragim@otvebti.uk</td>
+          <td data-label="country">Colombia</td>
+          <td data-label="point">27</td>
+        </tr>
+        <tr>
+          <td data-label="id">55</td>
+          <td data-label="first name">Shane</td>
+          <td data-label="last name">Vasquez</td>
+          <td data-label="email">la@ajlacre.bb</td>
+          <td data-label="country">Argentina</td>
+          <td data-label="point">66</td>
+        </tr>
+        <tr>
+          <td data-label="id">95</td>
+          <td data-label="first name">Jane</td>
+          <td data-label="last name">Johnston</td>
+          <td data-label="email">gi@zitvoksa.tc</td>
+          <td data-label="country">Papua New Guinea</td>
+          <td data-label="point">5</td>
+        </tr>
+        <tr>
+          <td data-label="id">9</td>
+          <td data-label="first name">Franklin</td>
+          <td data-label="last name">Glover</td>
+          <td data-label="email">jamvu@rovav.gs</td>
+          <td data-label="country">Montenegro</td>
+          <td data-label="point">66</td>
+        </tr>
+        <tr>
+          <td data-label="id">52</td>
+          <td data-label="first name">Lizzie</td>
+          <td data-label="last name">Morton</td>
+          <td data-label="email">we@wo.cx</td>
+          <td data-label="country">Ascension Island</td>
+          <td data-label="point">58</td>
+        </tr>
+        <tr>
+          <td data-label="id">10</td>
+          <td data-label="first name">Duane</td>
+          <td data-label="last name">McGuire</td>
+          <td data-label="email">ragim@otvebti.uk</td>
+          <td data-label="country">Colombia</td>
+          <td data-label="point">27</td>
+        </tr>
+        <tr>
+          <td data-label="id">55</td>
+          <td data-label="first name">Shane</td>
+          <td data-label="last name">Vasquez</td>
+          <td data-label="email">la@ajlacre.bb</td>
+          <td data-label="country">Argentina</td>
+          <td data-label="point">66</td>
+        </tr>
+        <tr>
+          <td data-label="id">95</td>
+          <td data-label="first name">Jane</td>
+          <td data-label="last name">Johnston</td>
+          <td data-label="email">gi@zitvoksa.tc</td>
+          <td data-label="country">Papua New Guinea</td>
+          <td data-label="point">5</td>
+        </tr>
+        <tr>
+          <td data-label="id">9</td>
+          <td data-label="first name">Franklin</td>
+          <td data-label="last name">Glover</td>
+          <td data-label="email">jamvu@rovav.gs</td>
+          <td data-label="country">Montenegro</td>
+          <td data-label="point">66</td>
+        </tr>
+        <tr>
+          <td data-label="id">52</td>
+          <td data-label="first name">Lizzie</td>
+          <td data-label="last name">Morton</td>
+          <td data-label="email">we@wo.cx</td>
+          <td data-label="country">Ascension Island</td>
+          <td data-label="point">58</td>
+        </tr>
+        <tr>
+          <td data-label="id">10</td>
+          <td data-label="first name">Duane</td>
+          <td data-label="last name">McGuire</td>
+          <td data-label="email">ragim@otvebti.uk</td>
+          <td data-label="country">Colombia</td>
+          <td data-label="point">27</td>
+        </tr>
+        <tr>
+          <td data-label="id">55</td>
+          <td data-label="first name">Shane</td>
+          <td data-label="last name">Vasquez</td>
+          <td data-label="email">la@ajlacre.bb</td>
+          <td data-label="country">Argentina</td>
+          <td data-label="point">66</td>
+        </tr>
+        <tr>
+          <td data-label="id">95</td>
+          <td data-label="first name">Jane</td>
+          <td data-label="last name">Johnston</td>
+          <td data-label="email">gi@zitvoksa.tc</td>
+          <td data-label="country">Papua New Guinea</td>
+          <td data-label="point">5</td>
+        </tr>
+        <tr>
+          <td data-label="id">9</td>
+          <td data-label="first name">Franklin</td>
+          <td data-label="last name">Glover</td>
+          <td data-label="email">jamvu@rovav.gs</td>
+          <td data-label="country">Montenegro</td>
+          <td data-label="point">66</td>
+        </tr>
+        <tr>
+          <td data-label="id">52</td>
+          <td data-label="first name">Lizzie</td>
+          <td data-label="last name">Morton</td>
+          <td data-label="email">we@wo.cx</td>
+          <td data-label="country">Ascension Island</td>
+          <td data-label="point">58</td>
+        </tr>
+        <tr>
+          <td data-label="id">10</td>
+          <td data-label="first name">Duane</td>
+          <td data-label="last name">McGuire</td>
+          <td data-label="email">ragim@otvebti.uk</td>
+          <td data-label="country">Colombia</td>
+          <td data-label="point">27</td>
+        </tr>
+        <tr>
+          <td data-label="id">55</td>
+          <td data-label="first name">Shane</td>
+          <td data-label="last name">Vasquez</td>
+          <td data-label="email">la@ajlacre.bb</td>
+          <td data-label="country">Argentina</td>
+          <td data-label="point">66</td>
+        </tr>
+        <tr>
+          <td data-label="id">95</td>
+          <td data-label="first name">Jane</td>
+          <td data-label="last name">Johnston</td>
+          <td data-label="email">gi@zitvoksa.tc</td>
+          <td data-label="country">Papua New Guinea</td>
+          <td data-label="point">5</td>
+        </tr>
+        <tr>
+          <td data-label="id">9</td>
+          <td data-label="first name">Franklin</td>
+          <td data-label="last name">Glover</td>
+          <td data-label="email">jamvu@rovav.gs</td>
+          <td data-label="country">Montenegro</td>
+          <td data-label="point">66</td>
+        </tr>
+        <tr>
+          <td data-label="id">52</td>
+          <td data-label="first name">Lizzie</td>
+          <td data-label="last name">Morton</td>
+          <td data-label="email">we@wo.cx</td>
+          <td data-label="country">Ascension Island</td>
+          <td data-label="point">58</td>
+        </tr>
+      </table>
+    </div>
+  </section>
 </section>
